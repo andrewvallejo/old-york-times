@@ -1,0 +1,26 @@
+/* ==========================================================================
+  Elements - Landmarks
+========================================================================== */
+
+body {
+  background: #333;
+  color: #fff;
+}
+
+header {
+  @include flex(row, space-between);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+article {
+  @include flex(column, center)
+}
+
+form {
+  @include flex(column, center)
+}
+
