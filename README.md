@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# The Old York Times
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Browse the new york times as if it were a News Paper. 
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Browse the New York times in <sub>old</sub> fashion.
+- View top, most current New York Times' articles 
+- Navigate articles by using the sidebar
 
-### `yarn start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```szh 
+git clone git@github.com:andrewvallejo/old-york-times.git oyt
+cd oyt
+yarn 
+yarn start
+```
+```szh 
+git clone git@github.com:andrewvallejo/old-york-times.git oyt
+cd oyt
+npm i  
+npm start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tech Stack
 
-### `yarn test`
+<div align='center'>  
+<img src='https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=flat-square' alt='React Badge'>
+<img src='https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square' alt='JavaScript Badge'>
+<img src='https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=flat-square' alt='CSS3 Badge'>
+<img src='https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff&style=flat-square' alt='Sass Badge'> 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div> 
 
-### `yarn build`
+## <div align=center> My Story </div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Hi, I'm Andrew! I did this project as a practice 'take-home' skill test for Mod 4 of Turing. Our class was assigned five days to fulfill the rubric criteria under the recommendation of spending only 8 hours in total on this project. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+--- 
+**Learning goals:** 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Challenges:** 
 
-### `yarn eject`
+<sub align='center'>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I hope you have enjoyed it! If you want to see more, check out my projects at [Github](https://www.github.com/andrewvallejo). You can also find me on [Linkedin](https://www.linkedin.com/in/andrewvallejo/). 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+</sub>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
