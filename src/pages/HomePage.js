@@ -14,10 +14,8 @@ export const HomePage = () => {
 		})()
 	}, [dispatch, state])
 
-	console.log(state)
 	return (
 		<section>
-			<p>meo </p>
 		</section>
 	)
 }
