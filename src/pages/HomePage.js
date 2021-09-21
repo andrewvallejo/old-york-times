@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getNews } from "../utility/apiCalls/apiCalls";
+import { cleanNews } from "../utility/apiCalls/apiCleaner";
 
 export const HomePage = () => {
 	const [state, setState] = useState([])
@@ -8,16 +9,15 @@ export const HomePage = () => {
 
 	useEffect(() => {
 	(async () => {
-		const news = await getNews('home')
-		setState(news.results)
+		const newsData = await getNews('home')
+		const news = cleanNews(newsData)
+		setState(news)
 		})()
 	}, [])
 
 
 	return (
-		<section>
-	{console.log(state)}
+		<section>	
 		</section>
 	)
 }
-
