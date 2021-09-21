@@ -1,8 +1,14 @@
 import React from 'react';
+import { Route, Switch } from 'react-router';
+import { HomePage } from '../pages/HomePage'
 
 export const App = () => {
   return (
-    <h1>Star Wars RPG Companion</h1>
+    <main>
+      <Switch>
+        <Route path='/' component={HomePage} />
+      </Switch>
+    </main>
   );
 }
 
