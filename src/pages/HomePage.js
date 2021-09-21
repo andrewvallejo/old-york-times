@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { getNews } from "../utility/apiCalls/apiCalls";
 import { cleanNews } from "../utility/apiCalls/apiCleaner";
+import { UserContext } from "../utility/UserContext";
 
 export const HomePage = () => {
-	const [state, setState] = useState([])
-
-
+	const { state, dispatch } = useContext(UserContext);
 
 	useEffect(() => {
-	(async () => {
-		const newsData = await getNews('home')
-		const news = cleanNews(newsData)
-		setState(news)
+		!state.loaded && (async () => {
+			const newsData = await getNews('home')
+			const news = cleanNews(newsData)
+			dispatch({ state, action: { type: 'SETNEWS', value: news } })
 		})()
-	}, [])
+	}, [dispatch, state])
 
-
+	console.log(state)
 	return (
-		<section>	
+		<section>
+			<p>meo </p>
 		</section>
 	)
 }
