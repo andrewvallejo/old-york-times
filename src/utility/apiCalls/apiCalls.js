@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const getNews = async (section) => {
-  const apiKey = '9G0OsTXKKZFBCsSXqEIpXqU8wfrAhn1Z'
+  const apiKey = process.env.REACT_APP_API_KEY
   const config = {
     method: 'get',
     url: `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${apiKey}`,
