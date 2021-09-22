@@ -22,7 +22,8 @@ dd {
 }
 
 ul[role="list"],
-ol[role="list"] {
+ol[role="list"],
+li {
   list-style: none;
 }
 
@@ -51,6 +52,11 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+button {
+  background: none;
+  border: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,0 +1,46 @@
+/* ==========================================================================
+  Slices - NavigationBar
+========================================================================== */
+
+.navbar {
+	@include flex(row, space-between);
+	max-height: 3rem;
+	padding-block: .25rem;
+	border-top: $border-i;
+	border-bottom: $border-i;
+	> .today {
+		@include mediaQueries('navbar-today');
+		min-width: fit-content;
+		margin-inline: 1rem;
+		flex: 2;
+	}
+	> .nav-links {
+		@include flex(row, start);
+		margin: auto;
+		flex: 1;
+		> .link {
+			@include fonts(tiny);
+		}
+		> :first-child {
+			margin-right: 5%;
+		}
+	}
+	> .search-bar {
+		@include flex(row, end);
+		max-height: 2rem;
+		max-width: 20rem;
+		border: $border-i;
+		flex: 1;		
+		> .search-input, input, input:focus {
+			border: none;
+			outline: none;
+			flex-grow:2;
+			max-height: 1.5rem;
+		}
+		> .search-button {
+			transform: scale(.7);
+			padding: .5rem .75rem;
+		}
+	}
+}
+

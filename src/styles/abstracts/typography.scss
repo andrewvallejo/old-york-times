@@ -3,9 +3,9 @@ Settings - Typography
 ========================================================================== */
 
 // Font Size
-$fs-tiny: clamp(0.75rem, 2vw, 2rem);
-$fs-small: clamp(1rem, 2vw, 3rem);
-$fs-medium: clamp(.5rem, 1vw, 1rem);
+$fs-tiny:clamp(.5rem, 4vw, 1.25rem);
+$fs-small:clamp(.5rem, 1vw, 1.5rem);
+$fs-medium: clamp(.5rem, 2.5vw, 1.5rem);
 $fs-large: clamp(1.5rem, 5vw, 8rem );
 
 // Font Weight
