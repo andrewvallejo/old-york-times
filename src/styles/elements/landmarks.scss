@@ -3,6 +3,7 @@
 ========================================================================== */
 
 body {
+  padding: .5rem 1rem;
   position: relative;
   background: $white;
   z-index: -2;
@@ -11,18 +12,10 @@ body {
     position: absolute;
     z-index: -1;
     background-image: url('../../assets/images/paper-texture.jpg');
+    background: no-repeat center center fixed; 
     inset: 0;
     opacity: 0.5;
   }
-}
-
-header {
-  @include flex(row, space-between);
-}
-
-main {
-  width: 100vw;
-  height: 100vh;
 }
 
 article {
