@@ -34,5 +34,8 @@
 	}
 	> .edition {
 		@include mediaQueries('navbar-today');
+		> .edition-title {
+			@include fonts(tiny);
+		}
 	}
 }
