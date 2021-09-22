@@ -19,7 +19,7 @@ h1 {
 }
 
 h2 {
-  @include fonts(large);
+  @include fonts(medium);
 }
 
 h3 {
@@ -27,5 +27,5 @@ h3 {
 }
 
 p {
-  @include fonts(medium);
+  @include fonts(small);
 }
