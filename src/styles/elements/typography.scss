@@ -5,28 +5,27 @@
 .body {
   @include fonts(medium);
   text-transform: uppercase;
-  color: #fff;
+  color: $black;
 }
 
-:is(h1, h2, h3, h4, h5, h6, p, a, link, button) { 
+:is(h1, h2, h3, h4, h5, h6, p, a, link, button) {
   @include fonts(medium);
-  text-transform: uppercase;
-  color: #fff;
 }
 
 h1 {
-  @include fonts(giant, $font-weight-bold)
+  @include fonts(large);
+  letter-spacing: 0.25rem;
+  font-family: $ff-title;
 }
 
 h2 {
-  @include fonts(large)
+  @include fonts(large);
 }
 
 h3 {
-  @include fonts(medium)
+  @include fonts(medium);
 }
 
 p {
-  @include fonts(medium)
+  @include fonts(medium);
 }
-

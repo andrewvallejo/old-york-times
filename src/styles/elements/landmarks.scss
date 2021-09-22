@@ -3,8 +3,18 @@
 ========================================================================== */
 
 body {
-  background: #333;
-  color: #fff;
+  position: relative;
+  background: $white;
+  z-index: -2;
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background-image: url(../../assets/images/background.jpg);
+    inset: 0;
+    opacity: 0.8;
+
+  }
 }
 
 header {
@@ -17,10 +27,9 @@ main {
 }
 
 article {
-  @include flex(column, center)
+  @include flex(column, center);
 }
 
 form {
-  @include flex(column, center)
+  @include flex(column, center);
 }
-
