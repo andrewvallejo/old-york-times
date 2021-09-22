@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router';
 import { reducer } from '../utility/reducer'
 import { UserContext } from '../utility/UserContext';
 import { HomePage } from '../pages/HomePage'
+import { PageHeader } from '../pages/PageHeader';
 
 const initialState = {
   news: [],
@@ -14,6 +15,7 @@ export const App = () => {
 
   return (
     <UserContext.Provider value={{ state, dispatch }}>
+      <PageHeader />
       <main>
         <Switch>
           <Route path='/' component={HomePage} />
