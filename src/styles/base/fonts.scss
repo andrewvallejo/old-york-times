@@ -2,24 +2,18 @@
   Base - Grid
 ========================================================================== */
 
-@mixin fonts($font-type, $weight: $font-weight-regular) {
-  @if $font-type == massive {
-    font-size: $font-size-massive;
+@mixin fonts($font-type, $weight: $fw-regular) {
+  @if $font-type==large {
+    font-size: $fs-large;
     font-weight: $weight;
-  } @else if $font-type == giant {
-    font-size: $font-size-giant; 
+  } @else if $font-type==medium {
+    font-size: $fs-medium;
     font-weight: $weight;
-  } @else if $font-type == large {
-    font-size: $font-size-large; 
+  } @else if $font-type==small {
+    font-size: $fs-small;
     font-weight: $weight;
-  } @else if $font-type == medium {
-    font-size: $font-size-medium; 
-    font-weight: $weight;
-  } @else if $font-type == small {
-    font-size: $font-size-small;
-    font-weight: $weight;
-  } @else if $font-type == tiny {
-    font-size: $font-size-tiny;
+  } @else if $font-type==tiny {
+    font-size: $fs-tiny;
     font-weight: $weight;
   }
 }

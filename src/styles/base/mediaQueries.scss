@@ -13,16 +13,16 @@
     @content;
     transition: 100ms;
     @if $property == grid {
-      @include grid(mobile)
+      @include grid(mobile);
     }
   }
 }
-@mixin tablet($property) { 
+@mixin tablet($property) {
   @media only screen and (min-width: 768px) {
     @content;
     transition: 100ms;
     @if $property == grid {
-      @include grid(tablet)
+      @include grid(tablet);
     }
   }
 }
@@ -32,7 +32,7 @@
     @content;
     transition: 100ms;
     @if $property == grid {
-      @include grid(desktop)
+      @include grid(desktop);
     }
   }
 }
