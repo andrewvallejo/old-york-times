@@ -2,14 +2,18 @@
 Settings - Typography
 ========================================================================== */
 
-$font-size-tiny: 0.75rem;
-$font-size-small: 1rem;
-$font-size-medium: 1.25rem;
-$font-size-large: 1.875rem;
-$font-size-giant: 2.5rem;
-$font-size-massive: 3.125rem;
+// Font Size
+$fs-tiny: clamp(1vw, 0.75rem, 3vw);
+$fs-small: clamp(1vw, 1rem, 3vw);
+$fs-medium: clamp(1vw, 1.25rem, 3vw);
+$fs-large: clamp(1vw, 4rem, 10vw);
 
+// Font Weight
+$fw-regular: 400;
+$fw-bold: 700;
 
-$font-weight-thin: 300;
-$font-weight-regular: 400;
-$font-weight-bold: 700;
+// Font Family 
+$ff-title: Chomsky;
+$ff-primary: Georgia, 'Times New Roman', Times, serif;
+$ff-secondary: Arial;
+
