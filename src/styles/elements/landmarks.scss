@@ -8,12 +8,11 @@ body {
   z-index: -2;
   &::before {
     content: '';
-    z-index: -1;
     position: absolute;
+    z-index: -1;
     background-image: url('../../assets/images/paper-texture.jpg');
     inset: 0;
     opacity: 0.5;
-
   }
 }
 
