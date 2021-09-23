@@ -1,16 +1,18 @@
+/* ==========================================================================
+  Pages - HomePage | Components - Article
+========================================================================== */
+
 .newspaper {
 	margin-top: 1rem;
 	display: grid;
 	grid-auto-flow: dense;
-	grid-template-columns: repeat( auto-fit, minmax(15rem, 1fr) );
-	gap: .1rem;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 0.1rem;
 	border-radius: 2px;
-	max-height: 50%;
 }
 
 .article {
-	@include flex(column,center);
+	@include flex(column, center);
 	box-shadow: 0 0 5px $black;
 	padding: 1rem;
 }
-
