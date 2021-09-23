@@ -25,3 +25,14 @@ main {
   overflow-y: auto;
 }
 
+// Removes dropdown arrow 
+select {
+  @include fonts(link);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  &:focus {
+    outline: none;
+  }
+  }
