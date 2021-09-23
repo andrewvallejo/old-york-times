@@ -73,3 +73,10 @@ button {
     scroll-behavior: auto !important;
   }
 }
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: unset;
+}
