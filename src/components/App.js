@@ -21,7 +21,6 @@ export const App = () => {
           <Route path='/' component={HomePage} />
         </Switch>
       </main>
-
     </UserContext.Provider>
   );
 }
