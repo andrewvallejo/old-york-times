@@ -1,5 +1,5 @@
 /* ==========================================================================
-  Pages - PageHeader | slices - NavigationBar
+  Pages - PageHeader | Components - MastHead & NavigationBar
 ========================================================================== */
 
 .masthead {
@@ -21,7 +21,8 @@
 		text-align: center;
 		height: auto;
 		min-height: 5rem;
-		max-width: 10rem;
+		max-width: 12rem;
+
 	}
 	> .right {
 		width: clamp(10rem, 8vw, 25rem);
@@ -51,6 +52,54 @@
 		}
 		> .information {
 			text-align: justify;
+		}
+	}
+}
+
+.navbar {
+	@include flex(row, space-around);
+	max-height: 3rem;
+	padding-block: 0.25rem;
+	border-top: $border-i;
+	border-bottom: $border-i;
+	> .today {
+		@include mediaQueries("navbar-today");
+		min-width: fit-content;
+		margin-inline: 1rem;
+		flex: 2;
+	}
+	> .nav-links,
+	ul {
+		@include flex(row, start);
+		flex: 1;
+		> .link {
+			@include fonts(link);
+		}
+		> :first-child {
+			margin-right: 5%;
+		}
+	}
+
+	> .search-bar {
+		@include flex(row, end);
+		max-height: 2rem;
+		max-width: 20rem;
+		border: $border-i;
+		border-radius: 2px;
+		padding-left: 0.25rem;
+		> .search-input,
+		input,
+		input:focus {
+			margin-right: auto;
+			background: none;
+			border: none;
+			outline: none;
+			max-height: 1.5rem;
+			max-width: clamp(7rem, 20vw, 20rem);
+		}
+		> .search-button {
+			transform: scale(0.7);
+			padding: 0.5rem 0.75rem;
 		}
 	}
 }
