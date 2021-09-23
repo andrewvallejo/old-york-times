@@ -7,7 +7,6 @@ export const NewsFilter = () => {
 const handleClick = (event) => {
 	event.preventDefault()
 	const section = event.target.value
-	console.log(state)
 	dispatch({state, action: {type:'SETSECTION', value: section}})
 }
 
