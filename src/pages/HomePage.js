@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+import { Article } from "../components/Article";
 import { getNews } from "../utility/apiCalls/apiCalls";
 import { cleanNews } from "../utility/apiCalls/apiCleaner";
 import { UserContext } from "../utility/UserContext";
@@ -14,8 +15,11 @@ export const HomePage = () => {
 		})()
 	}, [dispatch, state])
 
+	const articles = state.news.map(article => article.title && <Article key={article.date} content={article} />)
+
 	return (
-		<section>
+		<section className='newspaper'>
+			{articles}
 		</section>
 	)
 }
