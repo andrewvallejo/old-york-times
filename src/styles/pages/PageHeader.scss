@@ -22,7 +22,6 @@
 		height: auto;
 		min-height: 5rem;
 		max-width: 12rem;
-
 	}
 	> .right {
 		width: clamp(10rem, 8vw, 25rem);
@@ -80,6 +79,11 @@
 		}
 	}
 
+	.filter-list {
+		cursor: pointer;
+		background: unset;
+		border-radius: 2px;
+	}	
 	> .search-bar {
 		@include flex(row, end);
 		max-height: 2rem;
@@ -103,3 +107,4 @@
 		}
 	}
 }
+
