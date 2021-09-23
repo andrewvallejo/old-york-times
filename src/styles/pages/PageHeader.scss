@@ -6,50 +6,50 @@
 	@include flex(row, space-between, center);
 	position: relative;
 	width: 100%;
-	> .center {
+	.center {
 		min-width: fit-content;
 		max-height: fit-content;
 		flex: auto;
 	}
-	> :is(.left, .right) {
+	:is(.left, .right) {
 		@include flex(column, center, center);
 		min-width: 5rem;
 		flex: 1;
 	}
-	> .left {
+	.left {
 		border: $border-i;
 		text-align: center;
 		height: auto;
 		min-height: 5rem;
 		max-width: 12rem;
 	}
-	> .right {
+	.right {
 		width: clamp(10rem, 8vw, 25rem);
 		margin-bottom: 0.5rem;
 	}
 }
 
 .masthead {
-	> .slogan {
+	.slogan {
 		@include flex(column, center, center, wrap);
 		@include mediaQueries("navbar-today");
 		display: flex;
 	}
-	> .title {
+	.title {
 		text-align: center;
 	}
-	> .edition {
+	.edition {
 		@include mediaQueries("navbar-today");
 		width: 100%;
 		min-width: 9rem;
-		> .edition-title {
+		.edition-title {
 			@include fonts(tiny);
 			text-align: center;
 			letter-spacing: 0.03rem;
 			text-transform: uppercase;
 			min-width: max-content;
 		}
-		> .information {
+		.information {
 			text-align: justify;
 		}
 	}
@@ -61,50 +61,48 @@
 	padding-block: 0.25rem;
 	border-top: $border-i;
 	border-bottom: $border-i;
-	> .today {
+	.filter-list {
+		cursor: pointer;
+		background: unset;
+		border: unset;
+		text-decoration: none;
+	}
+
+	.today {
 		@include mediaQueries("navbar-today");
 		min-width: fit-content;
 		margin-inline: 1rem;
 		flex: 2;
 	}
-	> .nav-links,
-	ul {
+	.nav-links {
 		@include flex(row, start);
 		flex: 1;
-		> .link {
+		.link {
 			@include fonts(link);
 		}
-		> :first-child {
+		:first-child {
 			margin-right: 5%;
 		}
 	}
 
-	.filter-list {
-		cursor: pointer;
-		background: unset;
-		border-radius: 2px;
-	}	
-	> .search-bar {
+	.search-bar {
 		@include flex(row, end);
 		max-height: 2rem;
 		max-width: 20rem;
 		border: $border-i;
 		border-radius: 2px;
 		padding-left: 0.25rem;
-		> .search-input,
-		input,
-		input:focus {
+		:is(search-input, input, input:focus) {
 			margin-right: auto;
 			background: none;
 			border: none;
 			outline: none;
 			max-height: 1.5rem;
-			max-width: clamp(7rem, 20vw, 20rem);
+			max-width: clamp(5rem, 20vw, 20rem);
 		}
-		> .search-button {
+		.search-button {
 			transform: scale(0.7);
 			padding: 0.5rem 0.75rem;
 		}
 	}
 }
-
