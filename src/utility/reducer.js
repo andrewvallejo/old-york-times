@@ -7,6 +7,12 @@ export const reducer = (state, { action }) => {
 				news: value,
 				loaded: true
 			}
+		case 'SETSECTION':
+			return {
+				...state,
+				section: value,
+				loaded: false
+			}
 		default:
 			return state;
 	}
