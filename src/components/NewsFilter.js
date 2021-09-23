@@ -2,32 +2,32 @@ export const NewsFilter = () => {
 	return (
 		<form>
 					<select className='filter-list' name="sections" id="sections">
-						<option selected  value="">Filter</option>
-						<option value="arts">arts</option>
-						<option value="automobiles">automobiles</option>
-						<option value="books">books</option>
-						<option value="fashion">fashion</option>
-						<option value="food">food</option>
-						<option value="health">health</option>
-						<option value="home">home</option>
-						<option value="insider">insider</option>
-						<option value="magazine">magazine</option>
-						<option value="movies">movies</option>
-						<option value="nyregion">nyregion</option>
-						<option value="obituaries">obituaries</option>
-						<option value="opinion">opinion</option>
-						<option value="politics">politics</option>
-						<option value="realestate">real estate</option>
-						<option value="science">science</option>
-						<option value="sport">sport</option>
-						<option value="sundayreview">sunday review</option>
-						<option value="technology">technology</option>
-						<option value="theater">theater</option>
-						<option value="t-magazine">t-magazine</option>
-						<option value="travel">travel</option>
-						<option value="upshot">upshot</option>
-						<option value="us">us</option>
-						<option value="world">world</option>
+						<option selected disabled>Filter</option>
+						<option value="home">All</option>
+						<option value="arts">Arts</option>
+						<option value="automobiles">Automobiles</option>
+						<option value="books">Books</option>
+						<option value="fashion">Fashion</option>
+						<option value="food">Food</option>
+						<option value="health">Health</option>
+						<option value="insider">Insider</option>
+						<option value="magazine">Magazine</option>
+						<option value="movies">Movies</option>
+						<option value="nyregion">NY Region</option>
+						<option value="obituaries">Obituaries</option>
+						<option value="opinion">Opinion</option>
+						<option value="politics">Politics</option>
+						<option value="realestate">Real Estate</option>
+						<option value="science">Science</option>
+						<option value="sport">Sport</option>
+						<option value="sundayreview">Sunday Review</option>
+						<option value="technology">Technology</option>
+						<option value="theater">Theater</option>
+						<option value="t-magazine">T-Magazine</option>
+						<option value="travel">Travel</option>
+						<option value="upshot">Upshot</option>
+						<option value="us">US</option>
+						<option value="world">World</option>
 					</select>
 				</form>
 	)
