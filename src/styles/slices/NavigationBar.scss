@@ -12,11 +12,12 @@
 		@include mediaQueries('navbar-today');
 		min-width: fit-content;
 		margin-inline: 1rem;
-		flex: 2;
+		margin-left: auto;
+		flex: auto
 	}
-	> .nav-links {
+	
+	> .nav-links, ul {
 		@include flex(row, start);
-		margin: auto;
 		flex: 1;
 		> .link {
 			@include fonts(tiny);
@@ -30,11 +31,14 @@
 		max-height: 2rem;
 		max-width: 20rem;
 		border: $border-i;
-		flex: 1;		
+		border-radius: 2px;
+		padding-left: .25rem;
+		// flex: 1;		
 		> .search-input, input, input:focus {
+			margin-right: auto;
+			background: none;
 			border: none;
 			outline: none;
-			flex-grow:2;
 			max-height: 1.5rem;
 		}
 		> .search-button {
