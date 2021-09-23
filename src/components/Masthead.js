@@ -8,7 +8,7 @@ export const Masthead = () => {
 			</aside>
 			<h1 className='title center'>The Old York Times</h1>
 			<aside className='edition right'>
-				<h3 className='edition-title'>Digital Paper Edition</h3>
+				<h2 className='edition-title'>Digital Paper Edition</h2>
 				<p className='information'>This website was designed to help those who want that old-timey feeling of reading a real newspaper without wasting actual paper.</p>
 			</aside>
 		</header>
