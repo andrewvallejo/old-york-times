@@ -1,13 +1,14 @@
+import { NavLink } from "react-router-dom"
 import { SearchBar } from "./SearchBar"
 
 export const NavigationBar = () => {
 
 	return (
 		<section className='navbar'>
-			<ul className='nav-links'>
-				<li className='home link'>Home</li>
-				<li className='filter link'>Filter</li>
-			</ul>
+			<nav className='nav-links'>
+				<NavLink to='/' className='home link'>Home</NavLink>
+				<nav className='filter link'>Filter</nav>
+			</nav>
 			<h2 className='today'>New York, Monday, September 21, 2021</h2>	
 			<SearchBar />
 		</section>
