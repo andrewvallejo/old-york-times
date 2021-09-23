@@ -7,6 +7,7 @@ import { PageHeader } from '../pages/PageHeader';
 
 const initialState = {
   news: [],
+  section: 'home',
   loaded: false
 }
 
