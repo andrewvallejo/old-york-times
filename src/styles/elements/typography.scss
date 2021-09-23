@@ -29,3 +29,7 @@ h3 {
 p {
   @include fonts(small);
 }
+
+h4, h5 {
+  @include fonts(semi);
+}

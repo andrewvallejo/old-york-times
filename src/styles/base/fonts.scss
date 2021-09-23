@@ -18,5 +18,8 @@
   } @else if $font-type==link {
     font-size: $fs-link;
     font-weight: $weight;
+  } @else if $font-type==semi {
+    font-size: $fs-semi;
+    font-weight: $weight;
   }
 }
