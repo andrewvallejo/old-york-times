@@ -3,48 +3,49 @@
 ========================================================================== */
 
 .navbar {
-	@include flex(row, space-between);
+	@include flex(row, space-around);
 	max-height: 3rem;
-	padding-block: .25rem;
+	padding-block: 0.25rem;
 	border-top: $border-i;
 	border-bottom: $border-i;
 	> .today {
-		@include mediaQueries('navbar-today');
+		@include mediaQueries("navbar-today");
 		min-width: fit-content;
 		margin-inline: 1rem;
-		margin-left: auto;
-		flex: auto
+		flex: 2;
 	}
-	
-	> .nav-links, ul {
+	> .nav-links,
+	ul {
 		@include flex(row, start);
 		flex: 1;
 		> .link {
-			@include fonts(tiny);
+			@include fonts(link);
 		}
 		> :first-child {
 			margin-right: 5%;
 		}
 	}
+
 	> .search-bar {
 		@include flex(row, end);
 		max-height: 2rem;
 		max-width: 20rem;
 		border: $border-i;
 		border-radius: 2px;
-		padding-left: .25rem;
-		// flex: 1;		
-		> .search-input, input, input:focus {
+		padding-left: 0.25rem;
+		> .search-input,
+		input,
+		input:focus {
 			margin-right: auto;
 			background: none;
 			border: none;
 			outline: none;
 			max-height: 1.5rem;
+			max-width: clamp(7rem, 20vw, 20rem);
 		}
 		> .search-button {
-			transform: scale(.7);
-			padding: .5rem .75rem;
+			transform: scale(0.7);
+			padding: 0.5rem 0.75rem;
 		}
 	}
 }
-

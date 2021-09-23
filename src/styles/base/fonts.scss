@@ -15,5 +15,8 @@
   } @else if $font-type==tiny {
     font-size: $fs-tiny;
     font-weight: $weight;
+  } @else if $font-type==link {
+    font-size: $fs-link;
+    font-weight: $weight;
   }
 }
