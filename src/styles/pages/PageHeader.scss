@@ -14,28 +14,42 @@
 	> :is(.left, .right) {
 		@include flex(column, center, center);
 		min-width: 5rem;
-		flex: 1
+		flex: 1;
 	}
 	> .left {
 		border: $border-i;
 		height: auto;
-		min-height: 4rem;
+		min-height: 3rem;
+		max-width: (8rem);
+	}
+	> .right {
+		width: clamp(10rem, 8vw, 25rem);
 	}
 }
 
 .masthead {
 	> .slogan {
 		@include flex(column, center, center, wrap);
-		@include mediaQueries('navbar-today');
+		@include mediaQueries("navbar-today");
 		display: flex;
 	}
 	> .title {
 		text-align: center;
 	}
 	> .edition {
-		@include mediaQueries('navbar-today');
+		@include mediaQueries("navbar-today");
+		width: 100%;
+		min-width: 9rem;
 		> .edition-title {
 			@include fonts(tiny);
+			text-align: center;
+			letter-spacing: 0.03rem;
+			text-transform: uppercase;
+			min-width: max-content;
+		}
+		> .information {
+			text-align: justify;
 		}
 	}
+
 }
