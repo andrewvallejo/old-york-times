@@ -1,5 +1,6 @@
 export const Article = ({ content }) => {
 	const { title, byline, images, date } = content
+	
 	return (
 		<article className='article'>
 			<h4> {title} </h4>
