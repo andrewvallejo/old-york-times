@@ -41,7 +41,7 @@
 	.edition {
 		@include mediaQueries("navbar-today");
 		width: 100%;
-		min-width: 9rem;
+		min-width: 10rem;
 		.edition-title {
 			@include fonts(tiny);
 			text-align: center;
@@ -50,7 +50,7 @@
 			min-width: max-content;
 		}
 		.information {
-			text-align: justify;
+			text-align: center;
 		}
 	}
 }
