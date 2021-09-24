@@ -21,6 +21,9 @@ export const App = () => {
         <Switch>
           <Route path='/' component={HomePage} />
         </Switch>
+        <Switch>
+          <Route path='/article/:title' component={HomePage} />
+        </Switch>
       </main>
     </UserContext.Provider>
   );
