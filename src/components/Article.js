@@ -3,14 +3,14 @@ import { useHistory } from "react-router"
 import { UserContext } from "../utility/UserContext"
 
 export const Article = ({ content }) => {
-	const {state, dispatch} = useContext(UserContext)
+	const { state, dispatch } = useContext(UserContext)
 	const { title, byline } = content
 	const history = useHistory()
 	const pathway = title.toString().split(' ').join('-').replace(/['":.]+/g, '',)
-	
+
 	const handleClick = () => {
 		history.push(`/article/${pathway}`)
-		dispatch({state, action: {type: 'SETARTICLE', value: content}})
+		dispatch({ state, action: { type: 'SETARTICLE', value: content } })
 	}
 
 	return (

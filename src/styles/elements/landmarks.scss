@@ -22,17 +22,16 @@ body {
 main {
   height: 85vh;
   overflow-y: scroll;
-
 }
 
-// Removes dropdown arrow 
+// Removes dropdown arrow
 select {
   @include fonts(link);
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: '';
+  text-overflow: "";
   &:focus {
     outline: none;
   }
-  }
+}

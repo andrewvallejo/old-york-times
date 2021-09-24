@@ -6,6 +6,6 @@
 		@include flex(row, space-evenly);
 	}
 	.abstract {
-		@include fonts(medium)
+		@include fonts(medium);
 	}
 }
