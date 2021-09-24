@@ -10,7 +10,7 @@ export const NavigationBar = () => {
 				<NavLink to='/' className='home link'>Home</NavLink>
 				<NewsFilter /> 
 			</nav>
-			<h2 className='today'>New York, Monday, September 21, 2021</h2>
+			<h2 className='today'>New York, Friday, September 24, 2021</h2>
 			<SearchBar />
 		</section>
 	)
