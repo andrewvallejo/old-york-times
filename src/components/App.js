@@ -20,8 +20,6 @@ export const App = () => {
       <main>
         <Switch>
           <Route path='/' component={HomePage} />
-        </Switch>
-        <Switch>
           <Route path='/article/:title' component={HomePage} />
         </Switch>
       </main>
