@@ -8,6 +8,7 @@ import { ArticlePage } from '../pages/ArticlePage';
 
 const initialState = {
   news: [],
+  article: {}, 
   section: 'home',
   loaded: false
 }
