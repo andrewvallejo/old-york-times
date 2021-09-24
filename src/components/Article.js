@@ -2,8 +2,9 @@ import { useHistory } from "react-router"
 
 export const Article = ({ content }) => {
 	const { title, byline } = content
-const history = useHistory()
-const pathway = title.toString().split(' ').join('-')
+	const history = useHistory()
+	const pathway = title.toString().split(' ').join('-').replace(/['".]+/g, '',)
+	
 	const handleClick = () => {
 		history.push(`/article/${pathway}`)
 	}
