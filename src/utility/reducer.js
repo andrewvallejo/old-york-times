@@ -13,6 +13,12 @@ export const reducer = (state, { action }) => {
 				section: value,
 				loaded: false
 			}
+		case 'SETARTICLE':
+			console.log(value)
+			return {
+				...state,
+				article: value
+			}
 		default:
 			return state;
 	}
