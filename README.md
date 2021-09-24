@@ -4,7 +4,7 @@
 
 <p align='center'> Browse the new york times as if it were a News Paper.</p>
 
-[Click Here](https://app.netlify.com/sites/oldyorktimes/overview) to view deployment!
+[Click Here](https://oldyorktimes.netlify.app) to view deployment!
 
 	
 
