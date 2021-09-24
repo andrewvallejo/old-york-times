@@ -72,7 +72,7 @@
 		@include mediaQueries("navbar-today");
 		min-width: fit-content;
 		margin-inline: 1rem;
-		flex: 2;
+		flex: 1;
 	}
 	.nav-links {
 		@include flex(row, start);
@@ -87,6 +87,7 @@
 
 	.search-bar {
 		@include flex(row, end);
+		flex: 1;
 		max-height: 2rem;
 		max-width: 20rem;
 		border: $border-i;
@@ -99,10 +100,12 @@
 			outline: none;
 			max-height: 1.5rem;
 			max-width: clamp(5rem, 20vw, 20rem);
+			cursor:grab;
 		}
 		.search-button {
 			transform: scale(0.7);
 			padding: 0.5rem 0.75rem;
+			cursor:not-allowed;
 		}
 	}
 }
