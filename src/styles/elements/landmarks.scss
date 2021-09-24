@@ -9,7 +9,6 @@ body {
   border: black 2px solid;
   background: $white;
   overflow: hidden;
-  height:auto !important;
   &::before {
     content: "";
     position: absolute;
@@ -21,8 +20,8 @@ body {
 }
 
 main {
-  height: 85vh;
-  overflow-y: auto;
+  height: 75vh;
+  overflow-y: scroll;
 }
 
 // Removes dropdown arrow 
