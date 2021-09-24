@@ -8,7 +8,7 @@ import { ArticlePage } from '../pages/ArticlePage';
 
 const initialState = {
   news: [],
-  article: {}, 
+  article: {},
   section: 'home',
   loaded: false
 }
