@@ -96,18 +96,18 @@
 		:is(search-input, input, input:focus) {
 			position: absolute;
 			inset: 0;
-			margin: auto .25rem ;
+			margin: auto 0.25rem;
 			background: none;
 			border: none;
 			outline: none;
 			max-height: 1.5rem;
 			max-width: clamp(5rem, 20vw, 20rem);
-			cursor:grab;
+			cursor: grab;
 		}
 		.search-button {
 			transform: scale(0.7);
 			padding: 0.5rem 0.75rem;
-			cursor:not-allowed;
+			cursor: not-allowed;
 		}
 	}
 }
