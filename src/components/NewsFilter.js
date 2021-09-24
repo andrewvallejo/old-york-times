@@ -2,17 +2,17 @@ import { useContext } from 'react'
 import { UserContext } from '../utility/UserContext'
 
 export const NewsFilter = () => {
-	const {state, dispatch} = useContext(UserContext)	
+	const { state, dispatch } = useContext(UserContext)
 
-const handleClick = (event) => {
-	event.preventDefault()
-	const section = event.target.value
-	dispatch({state, action: {type:'SETSECTION', value: section}})
-}
+	const handleClick = (event) => {
+		event.preventDefault()
+		const section = event.target.value
+		dispatch({ state, action: { type: 'SETSECTION', value: section } })
+	}
 
 	return (
 		<form>
-		<label htmlFor='sections'>
+			<label htmlFor='sections'>
 				<select className='filter-list' name='sections' id='sections' onChange={(e) => handleClick(e)}>
 					<option value=''>Filter</option>
 					<option value='home'>All</option>
@@ -41,7 +41,7 @@ const handleClick = (event) => {
 					<option value='us'>US</option>
 					<option value='world'>World</option>
 				</select>
-		</label>
-			</form>
+			</label>
+		</form>
 	)
 }
