@@ -4,6 +4,7 @@ import { reducer } from '../utility/reducer'
 import { UserContext } from '../utility/UserContext';
 import { HomePage } from '../pages/HomePage'
 import { PageHeader } from '../pages/PageHeader';
+import { ArticlePage } from '../pages/ArticlePage';
 
 const initialState = {
   news: [],
@@ -19,8 +20,8 @@ export const App = () => {
       <PageHeader />
       <main>
         <Switch>
-          <Route path='/' component={HomePage} />
-          <Route path='/article/:title' component={HomePage} />
+          <Route exact path='/' component={HomePage} />
+          <Route exact path='/article/:title' component={ArticlePage} />
         </Switch>
       </main>
     </UserContext.Provider>
