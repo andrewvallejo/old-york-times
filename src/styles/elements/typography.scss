@@ -5,11 +5,11 @@
 .body {
   @include fonts(medium);
   text-transform: uppercase;
-  color: $black;
 }
 
 :is(h1, h2, h3, h4, h5, h6, p, a, link, button) {
   @include fonts(medium);
+  color: $black;
 }
 
 h1 {
