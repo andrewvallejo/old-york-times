@@ -87,14 +87,16 @@
 
 	.search-bar {
 		@include flex(row, end);
+		position: relative;
 		flex: 1;
 		max-height: 2rem;
 		max-width: 20rem;
 		border: $border-i;
 		border-radius: 2px;
-		padding-left: 0.25rem;
 		:is(search-input, input, input:focus) {
-			margin-right: auto;
+			position: absolute;
+			inset: 0;
+			margin: auto .25rem ;
 			background: none;
 			border: none;
 			outline: none;
