@@ -8,9 +8,6 @@ export const Article = ({ content, id }) => {
 	const history = useHistory()
 	const pathway = title.toString().split(' ').join('-').replace(/['":.]+/g, '',)
 
-
-
-
 	const handleClick = () => {
 		history.push(`/article/${pathway}`)
 		dispatch({ state, action: { type: 'SETARTICLE', value: content } })

@@ -16,7 +16,7 @@ export const HomePage = () => {
 		})()
 	}, [dispatch, loaded, section, state])
 
-	const articles = state.news.map((article, i) => article.title && <Article key={article.id} content={article} />)
+	const articles = state.news.map((article) => article.title && <Article key={article.id} content={article} />)
 
 	return (
 		<section className='newspaper'>
