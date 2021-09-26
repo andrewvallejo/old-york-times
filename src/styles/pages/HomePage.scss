@@ -5,9 +5,6 @@
 .newspaper {
 	margin-top: 1rem;
 	display: grid;
-	// grid-auto-flow: dense;
-	// grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-	// gap: 0.1rem;
 	border-radius: 2px;
 	padding-bottom: 15vh;
 }
@@ -21,3 +18,7 @@
 		font-weight: $fw-bold;
 	}
 }
+
+// grid-auto-flow: dense;
+// grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+// gap: 0.1rem;
