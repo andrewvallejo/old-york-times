@@ -1,4 +1,3 @@
-import { nanoid } from "nanoid";
 import React, { useContext, useEffect } from "react";
 import { Article } from "../components/Article";
 import { getNews } from "../utility/apiCalls/apiCalls";
@@ -17,7 +16,7 @@ export const HomePage = () => {
 		})()
 	}, [dispatch, loaded, section, state])
 
-	const articles = state.news.map(article => article.title && <Article key={nanoid()} content={article} />)
+	const articles = state.news.map((article, i) => article.title && <Article key={article.id} content={article} />)
 
 	return (
 		<section className='newspaper'>
