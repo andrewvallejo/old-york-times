@@ -15,7 +15,7 @@ export const Article = ({ content, id }) => {
 		history.push(`/article/${pathway}`)
 		dispatch({ state, action: { type: 'SETARTICLE', value: content } })
 	}
-	console.log(id)
+
 	return (
 		<article className='article'>
 			<h2 className='title'> {title} </h2>
